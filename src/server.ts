@@ -37,8 +37,6 @@ app.post("/games/:id/ads", async (req, res) => {
   const body: any = req.body;
 
   // zod js (lib to validate values)
-  console.log(body);
-
   const ad = await prisma.ad.create({
     data: {
       gameId,
