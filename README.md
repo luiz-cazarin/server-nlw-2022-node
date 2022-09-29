@@ -1,21 +1,23 @@
-# Back-end
+# Back-end server NLW 2022 Esports
 Project realized in nlw 2022, full project
 
+## We use
+* Node
+* prisma
 
 ### Ad
-id
-game
-yearsPlaying
-discord
-weekDays
-hourStart
-hourEnd
-useVoiceChannel
-createAt
+* id
+* game
+* yearsPlaying
+* discord
+* weekDays
+* hourStart
+* hourEnd
+* useVoiceChannel
+* createAt
 
 
-### note
-whenever I work with hours or minutes data, we can store it in minutes, then change values in the backend, example 1h = 60 minutes -> we save to database in minutes
+
 
 ### first version - database
 
@@ -28,25 +30,21 @@ We can think how the routes
 - Ads list by game
 - Search discord by ads id
 
-## Http codes
+### Http codes
+- sucess
+2
+- redirect
+3
+- error
+4
+- exception
+5
 
-sucess
-2...
-redirect
-3...
-error
-4...
-exception
-5...
+## Notes
+whenever we work with hours or minutes data, we can store it in minutes, then change the values in the backend, example 1h = 60 minutes -> we save to the database in minutes
 
-
-### request page example
+### Pagination request
 localhost:3333/ads?page=2
 
-### prisma notes
-We be using Prisma with SQLite
-npx prisma migrate dev
-> new migration
-
 ### cors
-we can use the lib cors to define what front-end adress can use the backend
+we can use the library Cors to define what front-end address can use the backend
